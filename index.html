@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coleen Kunene · Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="bracket">{</span><span class="name-short">CK</span><span class="bracket">}</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#github" class="nav-link" data-section="github">GitHub</a></li>
+      <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#experience" class="mob-link">Experience</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#github" class="mob-link">GitHub</a></li>
+      <li><a href="#education" class="mob-link">Education</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== SECTION: HOME ===== -->
+  <section id="home" class="section active">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="hero-tag">
+          <span class="dot pulse"></span>
+          Available for opportunities
+        </div>
+        <h1 class="hero-title">
+          <span class="line1">Coleen</span>
+          <span class="line2">Kunene</span>
+        </h1>
+        <p class="hero-role">
+          <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+        </p>
+        <p class="hero-desc">
+          .NET Backend Engineer with 4+ years crafting scalable APIs, microservices, and enterprise backend systems in C# and the .NET ecosystem. Based in Cape Town, South Africa.
+        </p>
+        <div class="hero-cta">
+          <a href="#experience" class="btn-primary nav-link" data-section="experience">View Experience</a>
+          <a href="#contact" class="btn-outline nav-link" data-section="contact">Get In Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Companies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">BSc</span>
+            <span class="stat-label">Computer Science</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="avatar-wrap">
+          <div class="avatar-ring ring1"></div>
+          <div class="avatar-ring ring2"></div>
+          <div class="avatar-core">
+            <span class="avatar-initials">CK</span>
+          </div>
+          <div class="orbit-badge badge1">C#</div>
+          <div class="orbit-badge badge2">.NET</div>
+          <div class="orbit-badge badge3">Docker</div>
+          <div class="orbit-badge badge4">SQL</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Coleen Siphamandla Kunene</strong>, a <strong>.NET Backend Software Engineer</strong> with 4+ years of experience specialising in C# and the .NET ecosystem.
+          </p>
+          <p>
+            I build scalable, reliable backend systems, RESTful APIs, and web services — with deep expertise in database-driven applications, system integration, and <strong>microservices architectures</strong>. I'm passionate about writing clean, maintainable, testable code that delivers real business value.
+          </p>
+          <p>
+            I hold a <strong>BSc in Computer Science</strong> from the University of KwaZulu-Natal and a <strong>National Certificate in System Development (NQF 5)</strong> from Geeks4Learning.
+          </p>
+          <div class="about-chips">
+            <span class="chip">C# / .NET</span>
+            <span class="chip">Microservices</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Kubernetes</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">SQL Server</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">RabbitMQ</span>
+            <span class="chip">ADO.NET</span>
+            <span class="chip">Entity Framework</span>
+          </div>
+        </div>
+        <div class="about-card">
+          <div class="card-line">
+            <span class="card-label">Location</span>
+            <span class="card-value">Cape Town, South Africa 🇿🇦</span>
+          </div>
+          <div class="card-line">
+            <span class="card-label">Current Role</span>
+            <span class="card-value">Software Engineer @ HomeChoice</span>
+          </div>
+          <div class="card-line">
+            <span class="card-label">Work Type</span>
+            <span class="card-value">Hybrid · Full-time</span>
+          </div>
+          <div class="card-line">
+            <span class="card-label">Focus</span>
+            <span class="card-value">Backend · APIs · Microservices</span>
+          </div>
+          <div class="card-line">
+            <span class="card-label">Degree</span>
+            <span class="card-value">BSc Computer Science — UKZN</span>
+          </div>
+          <div class="card-line">
+            <span class="card-label">Certification</span>
+            <span class="card-value">NQF 5 System Development — Geeks4Learning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- HomeChoice -->
+        <div class="timeline-item" data-index="0">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Software Engineer</h3>
+                <span class="tl-company">HomeChoice · Full-time</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-period">Nov 2023 – Present</span>
+                <span class="tl-location">Wynberg, Cape Town · Hybrid</span>
+              </div>
+            </div>
+            <p class="tl-desc">
+              Working on backend development, building and consuming RESTful APIs and web services while implementing persistence solutions. Integrating third-party systems, maintaining technical documentation, participating in code reviews, and fixing bugs through root cause analysis. Collaborating with cross-functional teams in an Agile SCRUM environment.
+            </p>
+            <div class="tl-tags">
+              <span>C# / .NET Core</span><span>ASP.NET Web API</span><span>SQL Server</span>
+              <span>MySQL</span><span>SSIS</span><span>Entity Framework</span>
+              <span>Docker</span><span>Kubernetes</span><span>Crystal Reports</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reverside Consultant -->
+        <div class="timeline-item" data-index="1">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">.NET Software Developer (Consultant)</h3>
+                <span class="tl-company">Reverside · Contract</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-period">May 2023 – Nov 2023 · 7 mos</span>
+                <span class="tl-location">South Africa · On-site</span>
+              </div>
+            </div>
+            <p class="tl-desc">
+              Backend development for a mobile wallet and payment platform within a microservices architecture. Built and consumed RESTful APIs, implemented persistence solutions, collaborated with cross-functional teams, participated in code reviews, and supported system integration.
+            </p>
+            <div class="tl-tags">
+              <span>C# / .NET Core</span><span>ASP.NET Web API</span><span>PostgreSQL</span>
+              <span>Entity Framework</span><span>Microservices</span><span>Docker Swarm</span>
+              <span>RabbitMQ</span><span>MassTransit</span><span>GitLab</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reverside Intern -->
+        <div class="timeline-item" data-index="2">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Java Intern Software Developer</h3>
+                <span class="tl-company">Reverside · Internship</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-period">May 2022 – May 2023 · 1 yr 1 mo</span>
+                <span class="tl-location">South Africa · On-site</span>
+              </div>
+            </div>
+            <p class="tl-desc">
+              Hands-on backend development using Java. Built and deployed RESTful APIs with Spring Framework and Jakarta EE, implemented persistence with Hibernate, worked with MySQL databases, and learned software development best practices in a microservices environment.
+            </p>
+            <div class="tl-tags">
+              <span>Java</span><span>Spring Boot</span><span>Jakarta EE</span>
+              <span>Hibernate</span><span>MySQL</span><span>Microservices</span>
+              <span>RabbitMQ</span><span>MassTransit</span><span>GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats South Africa -->
+        <div class="timeline-item" data-index="3">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-role">Fieldworker</h3>
+                <span class="tl-company">Statistics South Africa · Contract</span>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-period">Feb 2022 – Mar 2022 · 2 mos</span>
+                <span class="tl-location">South Africa</span>
+              </div>
+            </div>
+            <p class="tl-desc">
+              Conducted field data collection for national surveys as part of Statistics South Africa's data gathering initiative.
+            </p>
+            <div class="tl-tags">
+              <span>Data Collection</span><span>Field Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Your skills groups remain the same -->
+        <div class="skill-group">
+          <h4 class="skill-group-title">Languages</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="95"><span>C#</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span>Java</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="70"><span>SQL</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Frameworks</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="95"><span>.NET Core / ASP.NET</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="85"><span>Entity Framework</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span>Spring Boot</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Databases</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="90"><span>SQL Server</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="85"><span>PostgreSQL</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span>MySQL</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">DevOps & Tools</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="85"><span>Docker</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="75"><span>Kubernetes</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="90"><span>Git / GitHub / GitLab</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Messaging & Integration</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="80"><span>RabbitMQ</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="80"><span>MassTransit</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="75"><span>SSIS / ETL</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4 class="skill-group-title">Methodologies</h4>
+          <div class="skill-bars">
+            <div class="skill-bar" data-level="90"><span>Agile / SCRUM</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="85"><span>Microservices</span><div class="bar"><div class="fill"></div></div></div>
+            <div class="skill-bar" data-level="90"><span>Code Reviews & TDD</span><div class="bar"><div class="fill"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: GITHUB ===== -->
+  <section id="github" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">GitHub</h2>
+      </div>
+      <div class="github-top">
+        <div class="github-profile-card">
+          <svg class="gh-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          <div>
+            <h3>Open Source & Projects</h3>
+            <p>Explore my code, contributions, and side projects on GitHub.</p>
+          </div>
+          <a href="https://github.com/Sphakunene" target="_blank" class="btn-primary gh-btn">Visit GitHub →</a>
+        </div>
+      </div>
+      <div class="github-features">
+        <div class="gh-feature">
+          <div class="gh-feature-icon">📦</div>
+          <h4>Repositories</h4>
+          <p>Backend APIs, microservices demos, .NET projects and Java experiments.</p>
+        </div>
+        <div class="gh-feature">
+          <div class="gh-feature-icon">🔀</div>
+          <h4>Contributions</h4>
+          <p>Regular commits, pull requests, and collaboration on team and open-source projects.</p>
+        </div>
+        <div class="gh-feature">
+          <div class="gh-feature-icon">🌿</div>
+          <h4>Branching & CI/CD</h4>
+          <p>Clean Git workflows, feature branching, and automated pipelines.</p>
+        </div>
+        <div class="gh-feature">
+          <div class="gh-feature-icon">📋</div>
+          <h4>Documentation</h4>
+          <p>Well-documented READMEs, API references, and setup guides.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-inner contact-inner">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <p class="contact-sub">I'm open to new opportunities and collaborations. Feel free to reach out!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Cape Town, South Africa</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/coleen-kunene-442561148/" target="_blank" class="contact-val link">linkedin.com/in/coleen-kunene</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Sphakunene" target="_blank" class="contact-val link">github.com/Sphakunene</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:sphacol@gmail.com" class="contact-val link">sphacol@gmail.com</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message ✉️</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 06</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-body">
+            <h3>BSc Computer Science &amp; Information Technology</h3>
+            <span class="edu-school">University of KwaZulu-Natal</span>
+            <span class="edu-period">2016 – 2019</span>
+            <p class="edu-desc">Core studies in Computer Science with skills in C++, Microsoft SQL Server, algorithms, data structures, and software engineering principles.</p>
+            <div class="tl-tags">
+              <span>C++</span><span>SQL Server</span><span>Algorithms</span>
+              <span>Data Structures</span><span>Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📜</div>
+          <div class="edu-body">
+            <h3>National Certificate: System Development (NQF 5)</h3>
+            <span class="edu-school">Geeks4Learning</span>
+            <span class="edu-period">Post-Graduate Certification</span>
+            <p class="edu-desc">Practical certification focusing on software development, system design, and modern development practices aligned to industry standards.</p>
+            <div class="tl-tags">
+              <span>System Development</span><span>NQF 5</span><span>Software Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><span class="bracket">{</span> Coleen Siphamandla Kunene <span class="bracket">}</span> · Software Engineer · Cape Town 🇿🇦</p>
+    <p class="footer-note">Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
